@@ -1,0 +1,177 @@
+.{
+	margin: 0;
+	padding:0;
+}
+
+html{
+	margin:0;
+}
+
+body{
+	font-size:13px;
+	font-family: calibri,Arial;
+	background-color: #f5f5f6;
+	color:#697071;
+}
+
+  /**  Generic class style   **/
+
+  .no-active{}
+  .active{
+  	background-color: #edeeef;
+	transition: 0.2s;
+  }
+
+
+
+
+
+.wrapper .container{
+	width: 700px;
+
+
+  /**  Style the Management of Order  **/
+
+
+}
+.wrapper .container .manage h2.manage-order{
+ margin:20px 0 20px 0;
+ font-size: 24px;
+ font-weight: 500; 
+}
+.wrapper .container .manage h2.manage-order a.faq{
+	font-size: 16px;
+    float: right;
+    padding:7px 0 3px 0;   
+    color: #526cd0;
+    text-decoration: none;
+}
+.wrapper .container .manage ul.manage-list{
+	margin:0;
+	padding:0;
+    border:1px solid #edeeef;
+    background-color: #fff;
+    border-radius: 4px;
+
+
+}
+.wrapper .container .manage ul.manage-list .fa{
+	opacity: 0.7;
+}
+.wrapper .container .manage ul.manage-list span{
+	color: #526cd0;
+}
+.wrapper .container .manage ul.manage-list li:first-child{
+	border-left: 0;
+}
+.wrapper .container .manage ul.manage-list li{
+	display: inline-block;
+	width:33%;
+	text-align: center;
+	border-left: 1px solid #edeeef;
+	padding: 20px 0 20px 0;
+	text-decoration: none;
+	font-size: 15px;
+}
+.wrapper .container .manage ul.manage-list li a{
+	text-decoration: none;
+}
+
+
+
+/**   Style the Issue  **/
+
+
+.wrapper .container .issue{
+  padding-top: 20px;
+}
+.wrapper .container .issue h3.issue-heading{
+	margin:0;
+	font-size: 16px;
+	font-weight: 600;
+	opacity: 0.9;
+}
+.wrapper .container .issue .issue-list1{
+	padding-top: 15px;
+	width:33%;
+	float: left;
+}
+.wrapper .container .issue .issue-list2{
+	padding-top: 15px;
+	padding-left: 20px;
+	width: 67%;
+	float: left;
+}
+.wrapper .container .issue .issue-detail {
+	padding-top: 50px;
+	padding-left: 20px;
+	width: 67%;
+	float: left;
+}
+.wrapper .container .issue .issue-detail .arrow-icon{
+	padding-right: 10px;
+}
+.wrapper .container .issue .issue-detail .default-text{}
+.wrapper .container .issue .issue-list1 label.select-issue,.wrapper .container .issue .issue-list2 label.select-issue-detail{
+	margin:0;
+	padding-bottom: 5px;
+	display: block;
+	font-weight: 300;
+}
+.wrapper .container .issue .issue-list1 ul,.wrapper .container .issue .issue-list2 ul{
+	margin: 0;
+	padding: 0;
+	border:1px solid #edeeef;
+	background-color: #fff;
+	list-style-type: none;
+	cursor: pointer;
+	border-radius: 4px;
+
+}
+.wrapper .container .issue .issue-list1 ul li:first-child,.wrapper .container .issue .issue-list2 ul li:first-child{
+	border-top: 0;
+}
+.wrapper .container .issue .issue-list1 ul li,.wrapper .container .issue .issue-list2 ul li{
+	text-decoration: none;
+	padding: 10px 15px;
+	border-top: 1px solid #edeeef;
+}
+
+.wrapper .container .issue .issue-list1 ul li:hover,.wrapper .container .issue .issue-list2 ul li:hover,
+.wrapper .container .issue .issue-list1 ul li.active{
+	background-color: #edeeef;
+	transition: 0.2s;
+}
+
+
+/**  Style the Customer Care Contact  **/
+
+
+.wrapper .container .contact{
+	margin-top: 35px;
+}
+.wrapper .container .contact .customer-care{}
+.wrapper .container .contact .customer-care a.contact-link{
+	padding:10px;
+	border-top:1px solid #edeeef;
+	border-bottom:1px solid #edeeef;
+	background-color: #f7f8f9;
+	display: block;
+    text-decoration: none;
+}
+.wrapper .container .contact .customer-care a.contact-link .phone-icon{
+	color:#697071;
+	float: left;
+	
+
+}
+.wrapper .container .contact .customer-care a.contact-link .text{
+	padding:5px 50px;
+	line-height: 14px;
+}
+.wrapper .container .contact .customer-care a.contact-link .text .number{
+	color: #526cd0;
+}
+.wrapper .container .contact .customer-care a.contact-link .text .days{
+	color:#697071;
+}

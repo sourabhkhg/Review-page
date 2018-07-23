@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Management</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="none()">
+	<div class="wrapper">
+		<div class="container">
+			<div class="main-content">
+
+
+			<!--  Manage your order  -->
+
+				<div class="manage">
+					<h2 class="manage-order">Manage your orders <a class="faq" href="#">FAQs</a></h2>
+					<ul class="manage-list">
+						<li class="track">
+							<a href="#"><i class="fa fa-truck fa-3x" aria-hidden="true"></i><br><span>Track</span></a>
+						</li>
+						<li class="cancel">
+							<a href="#"><i class="fa fa-ban fa-3x" aria-hidden="true"></i><br><span>Cancel</span></a>
+						</li>
+						<li class="return">
+							<a href="#"><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i><br><span>Return</span></a>
+						</li>
+					</ul>
+				</div>
+
+				<!--  Manage your Issue  -->
+
+  				<div class="issue">
+  				<h3 class="issue-heading">Reach us by selecting the issue below</h3>
+  					<div class="issue-list1">
+  					<label class="select-issue">Select issue*</label>
+  						<ul id="current">
+  							<li onclick="current(this,'order-delivery')">Order Delivery</li>
+  							<li onclick="current(this,'return-exchange')">Return/Exchange</li>
+  							<li onclick="current(this,'change-cancel-order')">Change/Cancel Order</li>
+  							<li onclick="current(this,'payment-refund')">Payment/Refund</li>
+  							<li onclick="current(this,'offer-discount-coupon')">Offers,Discount,Coupons</li>
+  							<li onclick="current(this,'manage-your-account')">Manage Your Account</li>
+  							<li onclick="current(this,'others')">Others</li>
+						</ul>
+  					</div>
+  			<!--		<div id="default" class="issue-detail">
+  					<table>
+  							<tbody>
+  								<tr>
+  									<td class="arrow-icon">
+  										<i class="fa fa-arrow-right" aria-hidden="true"></i>
+  									</td>
+  									<td>
+										You can change the address from the "My Orders" page by clicking on "Change Address" Option. If "Change Address" option is not available, it means the address can no longer be changed. This may be due to:
+									</td>
+									<td class="arrow-icon">
+  										<i class="fa fa-arrow-right" aria-hidden="true"></i>
+  									</td>
+  									<td>	
+										You can change the address from the "My Orders" page by clicking on "Change Address" Option. If "Change Address" option is not available, it means the address can no longer be changed. This may be due to:
+									</td class="arrow-icon">
+									<td>
+  										<i class="fa fa-arrow-right" aria-hidden="true"></i>
+  									</td>
+  									<td>	
+										You can change the address from the "My Orders" page by clicking on "Change Address" Option. If "Change Address" option is not available, it means the address can no longer be changed. This may be due to:
+									</td>
+  								</tr>
+  							</tbody>
+                         </table>
+  						</div>  -->
+
+  					<div id="all-issue" class="issue-list2">
+  						
+  						<div  style="display: block;" id="order-delivery" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>Where's my order</li>
+  								<li>I haven't received some items in my order</li>
+  								<li>Do you have an option to deliver my order faster?</li>
+  								<li>My order is delayed</li>
+  								<li>I received a wrong delivery update</li>
+  								<li>Can you deliver my product at a specific date or time?</li>
+  								<li>Others</li>
+  							</ul>
+  						</div>
+  						<div id="return-exchange" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>I want to return / exchange an item</li>
+  								<li>I have a query on return / exchange process</li>
+  								<li>I am unable to create return / exchange request</li>
+  								<li>When will my return product be picked up?</li>
+  								<li>My return pick up is delayed</li>
+  								<li>I self shipped my return but haven't received my refund yet</li>
+  								<li>Others</li>
+  							</ul>
+  						</div>
+  						<div id="change-cancel-order" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>I want to change my delivery address</li>
+  								<li>I want to cancel an order</li>
+  								<li>I am unable to cancel an order</li>
+  								<li>Others</li>
+  							</ul>
+  						</div>
+  						<div id="payment-refund" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>I have cancelled my order, but haven't received refund</li>
+  								<li>My order didn't get placed, but payment got debited</li>
+  								<li>My payment has been debited multiple times</li>
+  								<li>I want to transfer My Cashback to bank account</li>
+  								<li>I haven't yet received my refund</li>
+  							</ul>
+  						</div>
+  						<div id="offer-discount-coupon" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>My coupon got locked</li>
+  								<li>I am unable to apply coupon</li>
+  								<li>Others</li>
+  							</ul>
+  						</div>
+  						<div id="manage-your-account" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>I am unable to login to my account</li>
+  								<li>I want to unsubscribe from promotional emails and SMS</li>
+  							</ul>
+  						</div>
+  						<div id="others" >
+  							<label class="select-issue-detail">Select issue detail*</label>
+  							<ul>
+  								<li>I have an issue with the mobile app</li>
+  								<li>Others</li>
+  							</ul>
+  						</div>
+  					</div>
+                     <div style="clear: both;"></div>
+
+  				</div>
+
+  				<!--  Contact Number -->
+
+  				<div class="contact">
+  					<div class="customer-care">
+  						<a class="contact-link" href="#">
+  						<div class="phone-icon"><i class="fa fa-phone fa-3x" aria-hidden="true"></i></div>
+  							<div class="text"><span class="number">+91-70-7313198</span><br><span class="days">24 hour a day, 7 days a week</span></div>
+  						</a>
+  					</div>
+  				</div>	
+
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="javascript/jscript.js"></script>
+
+</body>
+</html>
+
+
